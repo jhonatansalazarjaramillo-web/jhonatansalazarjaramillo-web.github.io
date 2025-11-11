@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mision - Virida</title>
+    <link rel="stylesheet" href="../CSS/mision.css">
+    <link rel="icon" href="../IMG/Logo.png">
+    <style>
+        html, body {
+    height: 100%;
+}
+.LogoViridia {
+    height: 100px;
+    width: auto;
+    display: flex;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF9F2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-image: url(../IMG/Fondo\ de\ mision.png);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #F2EDE4;
+}
+
+header h1 {
+    color: #7BB661;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #7BB661;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 160px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+.nav-item.dropdown:hover .dropdown-content,
+.nav-item.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.Mision {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #2F5D3E;
+    text-align: center;
+    margin: 0 0 12px;
+}
+
+.texto {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.ContenidoMision {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    width: min(900px, 90%);
+    background: rgba(255,255,255,0.5);
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+footer {
+    background-color: #E8F5E9;
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-size: 14px;
+}
+
+@keyframes logo-float-vertical {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+.LogoViridia {
+    will-change: transform;
+    animation: logo-float-vertical 3.2s ease-in-out infinite;
+    transition: transform 180ms ease;
+}
+.LogoViridia:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .LogoViridia {
+        transition: none;
+    }
+}
+
+@keyframes logo-float-vertical {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+nav {
+    will-change: transform;
+    animation: logo-float-vertical 3.2s ease-in-out infinite;
+    transition: transform 180ms ease;
+}
+nav:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .LogoViridia {
+        transition: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <img src="../IMG/Logo.png" class="LogoViridia" alt="Logo de Viridia">
+    <nav>
+        <a class="Menu" href="../HTML/index.html">Inicio</a>
+        <a class="Menu" href="../HTML/tienda.html">Tienda</a>
+
+        <div class="nav-item dropdown">
+            <a class="Menu" href="#">Nosotros</a>
+            <div class="dropdown-content">
+                <a href="../HTML/mision.html"style="color:#7BB661;">Misión</a>
+                <a href="../HTML/vision.html">Visión</a>
+                <a href="../HTML/equipo.html">Equipo</a>
+
+            </div>
+        </div>
+        <a class="Menu" href="../HTML/contacto.html">Contáctanos</a>
+    </nav>
+</header>
+<main>
+    <section class="ContenidoMision">
+        <h1 class="Mision">Misión</h1>
+        <p class="texto">Es cuidar y embellecer la piel, el cuerpo y el cabello de forma natural, brindando productos artesanales creados con amor, respeto y responsabilidad hacia la naturaleza.
+Creemos en el poder de los ingredientes puros (aceites esenciales, extractos botánicos y activos naturales) que nutren profundamente, revitalizan los sentidos y reflejan la armonía entre el ser humano y su entorno.
+
+Cada producto que elaboramos busca inspirar una rutina de bienestar consciente, donde la belleza se viva como un acto de amor propio y de respeto por el planeta. Nos comprometemos con la sostenibilidad, el comercio justo y la elaboración responsable, fomentando prácticas que cuiden la Tierra y a las comunidades que nos rodean.
+
+En cada jabón, crema o aceite está presente nuestra esencia: naturaleza, pureza y equilibrio. Porque creemos que cuando la piel recibe lo mejor del mundo natural, el alma también florece. 🌼</p>
+    </section>
+</main>
+<footer>
+    <p style="color: black;">© 2025 Viridia. Cuidar tu piel es un acto de amor propio 🌿</p>
+</footer>
+</body>
+</html>

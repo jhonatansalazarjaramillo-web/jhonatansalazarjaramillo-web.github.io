@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/equipo.css">
+    <link rel="icon" href="../IMG/Logo.png">
+    <title>Viridia - Equipo</title>
+    <style>
+        html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF9F2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-image: url("../IMG/Fondo\ de\ equip.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #F2EDE4;
+}
+
+header h1 {
+    color: #7BB661;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #7BB661;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 160px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+.nav-item.dropdown:hover .dropdown-content,
+.nav-item.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.Alejandra {
+    font-family: 'Times New Roman', Times, serif;
+    color: #272b00;
+    margin-left: 70px;
+    margin-top: 40px;
+    border-radius: 500px;
+    height: 500px;
+    display: flex;
+}
+
+.Jhonatan {
+    font-family: 'Times New Roman', Times, serif;
+    color: #272b00;
+    margin-left: 70px;
+    margin-top: 40px;
+    border-radius: 500px;
+    height: auto;
+    display: flex;
+    width: 310px;
+}
+
+.AlejandraInfo {
+    font-family: 'Times New Roman', Times, serif;
+    color: #272b00;
+    margin-left: 300px;
+    margin-top: -500px;
+    border-radius: 50px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.363);
+    width: auto;
+    font-size: 20px;
+    padding: 10px 80px 10px;
+}
+
+.JhonatanInfo {
+    font-family: 'Times New Roman', Times, serif;
+    color: #272b00;
+    margin-left: 300px;
+    margin-top: -500px;
+    border-radius: 50px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.363);
+    width: auto;
+    font-size: 20px;
+    padding: 10px 100px 10px;
+}
+
+.Equipo {
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #272b00;
+    font-size: 50px;
+    margin-left: 70px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.LogoViridia {
+    height: 100px;
+    width: auto;
+    display: flex;
+}
+@keyframes logo-float-vertical {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+.LogoViridia {
+    will-change: transform;
+    animation: logo-float-vertical 3.2s ease-in-out infinite;
+    transition: transform 180ms ease;
+}
+.LogoViridia:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .LogoViridia {
+        transition: none;
+    }
+}
+@keyframes logo-float-vertical {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+nav {
+    will-change: transform;
+    animation: logo-float-vertical 3.2s ease-in-out infinite;
+    transition: transform 180ms ease;
+}
+nav:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .LogoViridia {
+        transition: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="../IMG/Logo.png" class="LogoViridia" alt="Logo de Viridia">
+    <nav>
+        <a class="Menu" href="../HTML/index.html">Inicio</a>
+        <a class="Menu" href="../HTML/tienda.html">Tienda</a>
+        <div class="nav-item dropdown">
+            <a class="Menu" href="#">Nosotros</a>
+            <div class="dropdown-content">
+                <a href="../HTML/mision.html">Misión</a>
+                <a href="../HTML/vision.html">Visión</a>
+                <a href="../HTML/equipo.html" style="color:#7BB661;">Equipo</a>
+            </div>
+        </div>
+        <a class="Menu" href="../HTML/contacto.html">Contáctanos</a>
+    </nav>
+</header>
+<main>
+    <h1 class="Equipo">Nuestro Equipo</h1>
+    
+        <img class="Alejandra" src="../IMG/Alejandra Martinez Arevalo .jpg" alt="Alejandra Martinez Arevalo">
+        <section class="AlejandraInfo">
+            <h2>Alejandra Martinez Arevalo</h2>
+            <p>Fundadora y Directora Creativa</p>
+            <p>Alejandra es la mente creativa detrás de Viridia. Fue quien propuso la idea de crear una línea de productos ecológicos para el cuidado de la piel y también quien dio nombre al proyecto.
+            Gracias a su visión y sensibilidad hacia el medio ambiente, define la esencia y estilo de cada producto y guía la identidad visual de la marca.
+            Su enfoque está en que cada detalle (desde el empaque hasta el mensaje) refleje el compromiso de Viridia con la naturaleza y la belleza consciente.</p>
+
+        </section>
+        <img src="../IMG/Jhonatan Salazar Jaramillo.jpg" alt="Jhonatan Salazar Jaramillo" class="Jhonatan">
+        <section class="JhonatanInfo">
+            <h2>Jhonatan Salazar Jaramillo</h2>
+            <p>Desarrollador y Diseñador Web</p>
+            <p>Jhonatan es el encargado de dar vida digital a la visión de Viridia. Como programador y diseñador web, transforma las ideas en una experiencia interactiva y funcional.
+            Se encarga de la estructura, el diseño y la navegación del sitio, asegurando que cada parte de la página comunique la filosofía ecológica de la marca.
+            Su trabajo combina la tecnología con la estética natural que caracteriza a Viridia, haciendo que la presencia digital sea tan limpia y sostenible como sus productos.</p>
+        </section>
+</main>
+
+
+</body>
+</html>

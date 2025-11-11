@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viridia - Contáctanos</title>
+    <link rel="icon" href="../IMG/Logo.png">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <style>
+        html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF9F2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #F2EDE4;
+}
+
+header h1 {
+    color: #7BB661;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #7BB661;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 160px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+.nav-item.dropdown:hover .dropdown-content,
+.nav-item.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+    }
+    .nav-item.dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 50px;
+    background-color: #FFF9F2;
+    flex: 1 0 auto; 
+    gap: 30px;
+}
+
+.texto-contacto {
+    flex: 1;
+    max-width: 50%;
+}
+
+.texto-contacto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #2F5D3E;
+}
+
+.texto-contacto p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+button {
+    background-color: #7BB661;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5d9952;
+}
+
+
+.info-contacto {
+    flex: 1;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-top: 0;
+    box-sizing: border-box;
+
+}
+
+.info-contacto h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2F5D3E;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.info-contacto p {
+    display: flex;
+}
+
+.imagen-contacto {
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url("../IMG/Fondodeinicio.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 18px 30px 30px 30px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 8px;
+    color: #fff;
+}
+
+.imagen-contacto h3 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+
+.imagen-contacto p {
+    margin: 0;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .imagen-contacto {
+        padding: 12px 18px 18px 18px;
+        min-height: 260px;
+    }
+    .contacto {
+        flex-direction: column;
+        padding: 16px;
+    }
+    .texto-contacto {
+        max-width: 100%;
+    }
+    .info-contacto {
+        margin-left: 0;
+        margin-top: 18px;
+        width: 100%;
+    }
+    input, textarea {
+        font-size: 16px; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 999px) {
+    .contacto {
+        padding: 20px 30px;
+        flex-direction: column;
+    }
+    .texto-contacto, .info-contacto {
+        max-width: 100%;
+    }
+    .info-contacto {
+        margin-left: 0;
+        margin-top: 18px;
+    }
+}
+
+footer {
+    background-color: #E8F5E9;
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-size: 14px;
+}
+
+.LogoViridia {
+    height: 100px;
+    width: auto;
+    display: flex;
+}
+
+@keyframes logo-float-vertical {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+.LogoViridia {
+    will-change: transform;
+    animation: logo-float-vertical 3.2s ease-in-out infinite;
+    transition: transform 180ms ease;
+}
+.LogoViridia:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .LogoViridia {
+        transition: none;
+    }
+}
+@keyframes logo-float-vertical {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+nav {
+    will-change: transform;
+    animation: logo-float-vertical 3.2s ease-in-out infinite;
+    transition: transform 180ms ease;
+}
+nav:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .LogoViridia {
+        transition: none;
+    }
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.redes-sociales a img {
+    width: 42px;
+    height: 32px;
+    border-radius: 20px;
+}
+    </style>
+</head>
+<body>
+<header>
+    <img src="../IMG/Logo.png" class="LogoViridia" alt="Logo de Viridia">
+    <nav>
+        <a class="Menu" href="../HTML/index.html">Inicio</a>
+        <a class="Menu" href="../HTML/tienda.html">Tienda</a>
+        <div class="nav-item dropdown">
+            <a class="Menu" href="#">Nosotros</a>
+            <div class="dropdown-content">
+                <a href="../HTML/mision.html">Misión</a>
+                <a href="../HTML/vision.html">Visión</a>
+                <a href="../HTML/equipo.html">Equipo</a>
+
+            </div>
+        </div>
+        <a class="Menu" href="../HTML/contacto.html" style="color:#7BB661;">Contáctanos</a>
+    </nav>
+</header>
+
+<section class="contacto">
+    <div class="texto-contacto">
+        <h2>Contáctanos 🌿</h2>
+        <p>Estamos aquí para escucharte y ayudarte a cuidar tu piel naturalmente.</p>
+        <form action="https://formsubmit.co/jhonatansalazarjaramillo@gmail.com">
+            <input type="text" name="name" id="name" for="name" placeholder="Nombre completo" required>
+            <input type="email" name="email" id="email" for="email" placeholder="Correo electrónico" required>
+            <input type="text" name="message" id="message" for="message" placeholder="Asunto">
+            <textarea name="message" id="message" for="message" placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+    <div class="info-contacto">
+        <div class="imagen-contacto">
+            <h3>Información de contacto</h3>
+            <p>📍 Carrera 34 #101 - 102, Cali, Colombia</p>
+            <p>📞 +57 305 333 7794</p>
+            <p>✉️ contactoViridia@gmail.com</p>
+            <p>Nuestras Redes Sociales</p>
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/viridia.skin?utm_source=qr&igsh=MTd4MmJyMzl4cm5scw=="><img src="../IMG/Ig.jpeg" alt="Instagram"></a>
+                <a href="https://youtube.com/@viridia-i7i?si=r3MragU3PmfoaqhV"><img src="../IMG/youtube-logo-featured.avif" alt="Youtube"></a>
+                <a href="https://www.tiktok.com/@viridia66?_r=1&_t=ZS-91AN0qkiwdw"><img src="../IMG/tiktok.png" alt="Tiktok"></a>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>© 2025 Viridia. Tu piel merece lo mejor de la naturaleza 🌸</p>
+</footer>
+</body>
+</html>
