@@ -1,0 +1,166 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF9F2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-image: url(../IMG/Fondo\ de\ mision.png);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #F2EDE4;
+}
+
+header h1 {
+    color: #7BB661;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #7BB661;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 160px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px 14px;
+    color: #333;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+.nav-item.dropdown:hover .dropdown-content,
+.nav-item.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.Mision {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #2F5D3E;
+    text-align: center;
+    margin: 0 0 12px;
+}
+
+.texto {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.ContenidoMision {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    width: min(900px, 90%);
+    background: rgba(255,255,255,0.5);
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+footer {
+    background-color: #E8F5E9;
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-size: 14px;
+}
+
+.LogoViridia {
+    height: 100px;
+    width: auto;
+    display: flex;
+}
+
+@keyframes logo-float-vertical {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+.LogoViridia {
+    will-change: transform;
+    animation: logo-float-vertical 3.2s ease-in-out infinite;
+    transition: transform 180ms ease;
+}
+.LogoViridia:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .LogoViridia {
+        transition: none;
+    }
+}
+
+@keyframes logo-float-vertical {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+nav {
+    will-change: transform;
+    animation: logo-float-vertical 3.2s ease-in-out infinite;
+    transition: transform 180ms ease;
+}
+nav:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .LogoViridia {
+        transition: none;
+    }
+}

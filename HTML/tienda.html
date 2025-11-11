@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tienda.css">
+    <link rel="icon" href="../IMG/Logo.png">
+    <title>Viridia - Tienda</title>
+</head>
+<body>
+<header>
+    <img src="../IMG/Logo.png" class="LogoViridia" alt="Logo de Viridia">
+    <nav>
+        <a class="Menu" href="../HTML/index.html">Inicio</a>
+        <a style="color: #7BB661;" class="Menu" href="../HTML/tienda.html">Tienda</a>
+        <div class="nav-item dropdown">
+            <a class="Menu" href="#">Nosotros</a>
+            <div class="dropdown-content">
+                <a href="../HTML/mision.html">Misión</a>
+                <a href="../HTML/vision.html">Visión</a>
+                <a href="../HTML/equipo.html">Equipo</a>
+            </div>
+        </div>
+        <a class="Menu" href="../HTML/contacto.html">Contactanos</a>
+
+    </nav>  
+</header>
+<section class="banner">
+    <h2 class="Textobanner">Descubre el poder natural del cuidado de tu piel</h2>
+    <p class="Textobanner">Productos elaborados con ingredientes orgánicos y amor por tu bienestar.</p>
+    <button>Ver productos</button>
+</section>
+<div id="cart-overlay" class="cart-overlay" hidden></div>
+<aside id="cart-panel" class="cart-panel" aria-hidden="true">
+    <header class="cart-header">
+        <h3>Tu carrito</h3>
+        <button id="cart-close" class="cart-close" aria-label="Cerrar carrito">×</button>
+    </header>
+    <div class="cart-body">
+        <ul id="cart-items" class="cart-items">
+        </ul>
+    </div>
+    <footer class="cart-footer">
+        <div class="cart-total-row">
+            <span>Total</span>
+            <strong id="cart-total">$0</strong>
+        </div>
+        <button id="cart-pay" class="cart-pay">Pagar</button>
+        <button id="cart-toggle-bottom" class="cart-toggle-bottom">Cerrar</button>
+    </footer>
+</aside>
+
+<button id="cart-toggle" class="cart-toggle" aria-expanded="false" aria-controls="cart-panel">🛒</button>
+
+<center><h1 class="Tiendatitulo" style="color: black;">Tienda</h1></center>
+</div>
+<section class="productos-container">
+
+    <!-- Jabones -->
+    <div class="categoria-block" data-cat="jabon">
+        <h2 class="categoria-title">Jabones</h2>
+        <div class="productos-grid">
+            <div class="producto" data-category="jabon">
+                <img src="../IMG/Jabon con miel.png" alt="Jabón de avena y miel">
+                <h3>Jabón de avena y miel</h3>
+                <p>$24.900</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="jabon">
+                <img src="../IMG/Jabon verde de aloe vera.jpg" alt="Jabón de aloe vera">
+                <h3>Jabón de aloe vera</h3>
+                <p>$44.900</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="jabon">
+                <img src="../IMG/Jabon de carbon activado.jpg" alt="Jabón de carbon activado">
+                <h3>Jabón de carbon activado</h3>
+                <p>$14.900</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="jabon">
+                <img src="../IMG/Jabon Ecologico.png" alt="Jabón Ecologico">
+                <h3>Jabón de avena y miel</h3>
+                <p>$54.900</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Cremas -->
+    <div class="categoria-block" data-cat="crema">
+        <h2 class="categoria-title">Cremas</h2>
+        <div class="productos-grid">
+            <div class="producto" data-category="crema">
+                <img src="../IMG/Crema hidratante floral.png" alt="Crema hidratante floral">
+                <h3>Crema hidratante floral</h3>
+                <p>$32.500</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="crema">
+                <img src="../IMG/Crema hidratante de rosa mosqueta y vitamina E.jpg" alt="Crema hidratante de rosa mosqueta y vitamina E">
+                <h3>Crema hidratante de rosa mosqueta y vitamina E</h3>
+                <p>$63.500</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="crema">
+                <img src="../IMG/Crema corporal de manzanilla y avena.png" alt="Crema corporal de manzanilla y avena">
+                <h3>Crema hidratante de rosa mosqueta y vitamina E</h3>
+                <p>$41.500</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="crema">
+                <img src="../IMG/Crema protectora con aloe vera y extracto de caléndula (hidratante con SPF natural).png" alt="Crema protectora con aloe vera y extracto de caléndula">
+                <h3>Crema protectora con aloe vera y extracto de calendula</h3>
+                <p>$40.500</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lociones -->
+    <div class="categoria-block" data-cat="locion">
+        <h2 class="categoria-title">Lociones</h2>
+        <div class="productos-grid">
+            <div class="producto" data-category="locion">
+                <img src="../IMG/Locion Aloe Evera.png" alt="Loción de aloe vera">
+                <h3>Loción de aloe vera</h3>
+                <p>$28.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="locion">
+                <img src="../IMG/Loción corporal de avena y miel.png" alt="Loción corporal de avena y miel">
+                <h3>Loción corporal de avena y miel</h3>
+                <p>$20.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="locion">
+                <img src="../IMG/Loción refrescante de limón y menta.png" alt="Loción refrescante de limón y menta">
+                <h3>Loción refrescante de limón y menta</h3>
+                <p>$12.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="locion">
+                <img src="../IMG/Loción floral de rosas y jazmín.png" alt="Loción floral de rosas y jazmín">
+                <h3>Loción floral de rosas y jazmín</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mascarillas -->
+    <div class="categoria-block" data-cat="mascarilla">
+        <h2 class="categoria-title">Mascarillas</h2>
+        <div class="productos-grid">
+            <div class="producto" data-category="mascarilla">
+                <img src="../IMG/Mascarilla de arcilla.png" alt="Mascarilla de arcilla">
+                <h3>Mascarilla de arcilla</h3>
+                <p>$35.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="mascarilla">
+                <img src="../IMG/Mascarilla capilar de aguacate y miel.png" alt="Mascarilla capilar de aguacate y miel">
+                <h3>Mascarilla capilar de aguacate y miel</h3>
+                <p>$40.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="mascarilla">
+                <img src="../IMG/Mascarilla iluminadora de yogur y avena.png" alt="Mascarilla iluminadora de yogur y avena">
+                <h3>Mascarilla iluminadora de yogur y avena</h3>
+                <p>$10.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="mascarilla">
+                <img src="../IMG/Mascarilla antioxidante de fresa y aloe vera.png" alt="Mascarilla antioxidante de fresa y aloe vera.png">
+                <h3>Mascarilla antioxidante de fresa y aloe vera.png</h3>
+                <p>$30.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Aceites -->
+    <div class="categoria-block" data-cat="aceite">
+        <h2 class="categoria-title">Aceites</h2>
+        <div class="productos-grid">
+            <div class="producto" data-category="aceite">
+                <img src="../IMG/Aceite facial de jojoba y lavanda.png" alt="Aceite facial de jojoba y lavanda">
+                <h3>Aceite facial de jojoba y lavanda</h3>
+                <p>$15.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="aceite">
+                <img src="../IMG/Aceite corporal de almendras dulces.png" alt="Aceite corporal de almendras dulces">
+                <h3>Aceite corporal de almendras dulces</h3>
+                <p>$15.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="aceite">
+                <img src="../IMG/Aceite capilar de romero y ricino.png" alt="Aceite capilar de romero y ricino">
+                <h3>Aceite capilar de romero y ricino</h3>
+                <p>$25.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto" data-category="aceite">
+                <img src="../IMG/Aceite facial de rosa mosqueta y geranio.png" alt="Aceite facial de rosa mosqueta y geranio">
+                <h3>Aceite facial de rosa mosqueta y geranio</h3>
+                <p>$51.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exfoliantes -->
+    <div class="categoria-block" data-cat="exfoliante">
+        <h2 class="categoria-title">Exfoliantes</h2>
+        <div class="productos-grid">
+            <div class="producto" data-category="exfoliante">
+                <img src="../IMG/Exfoliante corporal de cafe y coco.png" alt="Exfoliante corporal de cafe y coco">
+                <h3>Exfoliante corporal de cafe y coco</h3>
+                <p>$55.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sérums -->
+    <div class="categoria-block" data-cat="serum">
+        <h2 class="categoria-title">Sérums</h2>
+        <div class="productos-grid">
+            <div class="producto" data-category="serum">
+                <img src="../IMG/SerumvitaminaC.png" alt="Serum de vitamina C">
+                <h3>Serum de vitamina C y Rosa mosqueta</h3>
+                <p>$36.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p style="color: black;">© 2025 Viridia. Cuidar tu piel es un acto de amor propio 🌿</p>
+</footer>
+<script src="../JS/tienda.js"></script>
+</body>
+</html>
